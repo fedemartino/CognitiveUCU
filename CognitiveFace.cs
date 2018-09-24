@@ -36,7 +36,16 @@ namespace CognitiveCore
 
         }
         Rgba32 boxColor;
+        /// <summary>
+        /// Indica si la ultima llamada encontró o no una cara en la imagen
+        /// </summary>
+        /// <value></value>
         public bool FaceFound { get; private set; }
+        /// <summary>
+        /// Esta clase se encarga de consultar el servicio cloud para encontrar caras en las fotos
+        /// </summary>
+        /// <param name="subscriptionKey">api key para invocar el servicio</param>
+        /// <param name="boxColor">color a utilizar para dibujar un recuadro si se encuentra una cara</param>
         public CognitiveFace(string subscriptionKey, System.Drawing.Color boxColor)
         {
             this.subscriptionKey = subscriptionKey;
