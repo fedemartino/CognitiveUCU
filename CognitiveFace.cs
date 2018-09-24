@@ -30,11 +30,6 @@ namespace CognitiveCore
         // this region.
         const string uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
 
-        public CognitiveFace(bool faceFound)
-        {
-            this.FaceFound = faceFound;
-
-        }
         Rgba32 boxColor;
         /// <summary>
         /// Indica si la ultima llamada encontró o no una cara en la imagen
